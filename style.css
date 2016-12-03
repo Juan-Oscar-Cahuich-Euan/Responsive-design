@@ -1,0 +1,335 @@
+body{
+font-family: 'Ravi Prakash', cursive;
+border: 1px solid red;
+/*  */
+font-size: 16px; 
+}
+
+body header
+{
+border: 1px solid blue;
+text-align: center;
+background-image: url("img/fondo.jpg");
+background-size: cover;
+padding: 2em 0 6em 0;
+z-index:0;    
+/*para poner contenedor mas sercano por ejemplo el possition absolud*/
+    position: relative
+        /*aque posicion al fondo*/
+}
+
+body header img.img-circle
+{
+
+ border-radius: 100%;
+ width: 150px;
+ margin-top: 5em;
+}
+
+ body header h1
+ body header p
+ {
+
+/*border: 1px solider red;*/
+font-size: 1.5em
+color: white;
+
+}
+
+body header p
+{
+font-size: 1.3em
+}
+/*  texto sin subrayado al enlace*/
+body header a{
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    
+}
+/*  mouse encima al componente*/
+body header a:hover
+{
+    background-color: white;
+    color: #F74D4D;
+    transition: all 0.5s ease;
+    
+}
+body header div.data
+{
+    position: relative;
+    z-index: 2;
+    
+}
+/*para colocar cosa un elemento de tras de header: -before-  o despues de elemento after*/
+body header:before
+{
+content: 'saludo';
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(247, 77, 77, 0.7);
+    z-index: 0;
+}
+
+body nav{
+    background-color: #0A1525;
+    /*toma en cuenta a todos los elemento que flote*/
+    overflow: hidden;
+}
+body nav a.menu{
+    display:  inline-block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    /*boton ala dereche que flote*/
+    float: right;
+}
+section.sobre-mi
+{
+    padding: 1.4em;
+    /*centra todo lo que es texto*/
+
+    
+}
+section.sobre-mi article:first-child{
+        text-align: center;
+    
+}
+
+ection.sobre-mi article:first-child h2{
+        text-transform: uppercase;
+        font-weight: normal;
+    
+}
+
+
+section.sobre-mi article:first-child img{
+  width: 100%;
+ box-shadow: 1px 0 10px green;
+    filter: grayscale(100%);
+    border: 5px solid red; 
+    
+    
+}
+section.sobre-mi article:first-child img{
+  filter: grayscale(10%);
+}
+            
+section.sobre-mi article:last-child{
+    
+    
+}
+section.sobre-mi article:last-child h2
+{ 
+    
+    text-transform: capitalize;
+}
+section.sobre-mi article:last-child ul{
+    padding: 0;
+    list-style: none;
+    
+    
+}
+section.sobre-mi article:last-child ul li{
+    font-size: 0.85cm;
+    margin-bottom: 1cm;
+    color: #949494;
+    
+}
+section.sobre-mi article:last-child ul li i{
+   
+    font-size: 1.3cm;
+    margin-right: 0.8em;
+    color: #F74D4D;
+    
+}
+
+section.habilidades
+{
+    text-align: center;
+    background-color: #F74D4D;
+    color: white;
+    padding:2em;
+}
+
+section.habilidades h2
+{
+text-transform: uppercase;
+    font-weight: normal;
+    
+}
+
+section.hablilidades div.item
+{
+    padding: 1em;
+
+}
+section.hablilidades div.item
+{
+    
+    font-size: 2.5em;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1em 1.2em;
+    border: 1px solid white;
+}
+
+footer
+{
+    
+padding: 2em;
+background-color:#0A1525;
+    color: white;
+}
+
+footer h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    /* quitar negritas*/
+    font-weight: normal;
+    
+}
+
+footer div p.titulo
+{
+    color: #858585;
+    
+}
+footer div ul
+{
+ list-style: none;
+padding: 0;
+    
+}
+
+footer div ul li
+{
+display: inline-block;
+    
+}
+
+footer div ul li a{
+    font-size: 1.7em;
+    padding: 5px 10px;
+    color: white;
+    
+}
+
+footer div ul li:nth-child(1) a:hover
+{
+    color: #55acee;
+}
+footer div ul li:nth-child(2) a:hover
+{
+    color: #3b5998;
+}
+footer div ul li:nth-child(3) a:hover
+{
+    color: #cb2026;
+}
+footer div ul li:nth-child(4) a:hover
+{
+    color: #dd4b39;
+}
+
+footer form input,
+footer form textarea
+{
+display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+    background-color: transparent;
+    padding: 15px ;
+    box-sizing: border-box;
+    border-radius: 3px;
+    resize: none;
+    border: 1px solid #b7b7b7;
+    color: aquamarine;
+}
+footer form input[type=submit]
+{
+    
+    color: white;
+    background-color: #F74D4D;
+    border: none;
+    cursor: pointer;
+}
+
+footer .copyright{
+    text-align:center;
+    padding: 2em 0;
+    border-top: 1px solid #b7b7b7
+   
+    
+
+}
+
+footer .copyrigtht a{
+    color: #F74d4d;
+     /*quitar subrayado*/
+    text-decoration: none;
+    
+}
+
+nav ul 
+{
+    /* display: none*/
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li
+{
+    display: inline-block;
+}
+
+nav ul li a
+{
+    color: #b7b7b7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    
+}
+
+nav ul li a:hover
+{
+    color: white;
+    }
+/*Media QUERY*/
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        border: 5px solid blue;
+    }
+    
+    nav ul
+    {
+    display: block;
+    }
+    nav a.menu
+    {
+        background-color: red;
+        display: none !important;
+    }
+    
+    
+}
+
+@media screen and (min-width: 1024px)
+{
+    body
+    {
+        border: 5px solid red;
+    }
+    
